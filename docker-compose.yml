@@ -26,5 +26,5 @@ services:
         - CHECKOUT_STOREFRONT_URL=http://localhost:3001/checkout-spa/
         - CLOUD_DEPLOYMENT_URL=
     ports:
-      - 3009:3000
+      - 3009:3009
     command: sh -c '(nginx &) && pnpm turbo run start --filter=storefront...'
